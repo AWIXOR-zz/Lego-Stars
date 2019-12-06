@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App">
         <h1>Lego Stars</h1>
         <SearchBox
-          placeholder="Search for user"
+          placeholder="Search for a Lego"
           handleChange={this.handleChange}
         />
         <CardList users={filteredUsers} />
