@@ -19,6 +19,10 @@ class App extends Component {
       .then(users => this.setState({ users: users }));
   }
 
+  handleChange = e => {
+    this.setState({ searchField: e.target.value });
+  };
+
   render() {
     const { users, searchField } = this.state;
     const filteredUsers = users.filter(user =>
@@ -26,11 +30,15 @@ class App extends Component {
     );
     return (
       <div className="App">
+        <h1>Lego Stars</h1>
         <SearchBox
           placeholder="Search for user"
-          handleChange={e => this.setState({ searchField: e.target.value })}
+          handleChange={this.handleChange}
         />
         <CardList users={filteredUsers} />
+        <p>
+          Made with love By <a href="https://github.com/AWIXOR">@Awixor</a>
+        </p>
       </div>
     );
   }

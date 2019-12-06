@@ -20,3 +20,15 @@
 .App-link {
   color: #09d3ac;
 }
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 72px;
+  color: #f5f6fa;
+}
+p {
+  color: #f5f6fa;
+}
+a {
+  color: #00a8ff;
+  text-decoration: none;
+}
